@@ -52,6 +52,7 @@ footer{
 .wrapper .footer_widget .logo{
     margin-bottom: 2vh;
     vertical-align: middle;
+    width: 25vh;
 }
 
 .wrapper .footer_widget p{
