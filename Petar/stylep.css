@@ -2,28 +2,51 @@ header{
     display:flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(0, 33, 15, 255); 
     
     h1{
-        color:white;
+        color:rgb(255, 255, 204) ;
+        background-color: rgb(0, 33, 15, 255); 
+        border-style: solid;
+        border-color:rgb(0, 33, 15, 255); 
+        border-right-width: 14cm;
+        font-size: 3cm;
+        border-left-width: 10cm;
     }
 }
+li{
+    font-size:0.5cm;
+    text-transform:capitalize;
+    color:rgb(255, 255, 204) ;
+}
+ul{
+    display: block;
+    list-style-type: none;
+    justify-content: flex-start;
+    color:rgb(255, 255, 204) ;
+}
 h2{
-    color:white;
+    
+    color:rgb(255, 255, 204) ;
+    display: flex;
+    justify-content: center;
 }
 p{
     font-size:0.5cm;
-    color:white;
-}
-ul{
-    color:white;
+    display: block;
+    color:rgb(255, 255, 204) ;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 #logo{
     background-color: rgb(0, 33, 15, 255);  
+    display: flex;
+    justify-content: flex-start;
+    
 }
 body {
     min-height: 100vh;
