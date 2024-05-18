@@ -13,7 +13,7 @@ body {
     background-color: Rgb(69 152 73);  
     align-items: center;
     justify-content: flex-end;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 footer{
