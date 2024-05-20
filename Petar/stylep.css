@@ -9,17 +9,34 @@ header{
         background-color: rgb(0, 33, 15, 255); 
         border-style: solid;
         border-color:rgb(0, 33, 15, 255); 
-        border-right-width: 14cm;
+        border-right-width: 12cm;
         font-size: 3cm;
-        border-left-width: 10cm;
+        border-left-width: 12cm;
     }
+}
+.Pictures{
+    display: flex;
+    justify-content: space-between;
 }
 li{
     font-size:0.5cm;
     text-transform:capitalize;
     color:rgb(255, 255, 204) ;
 }
+.Champions{
+    align-items: center;
+    display: block;
+    border-style: solid;
+    padding: 0.01cm;
+    
+    
+}
+.Categories{
+    padding:0.01cm;
+    margin: 0.01cm;
+}
 ul{
+
     display: block;
     list-style-type: none;
     justify-content: flex-start;
@@ -36,12 +53,7 @@ p{
     display: block;
     color:rgb(255, 255, 204) ;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
+
 #logo{
     background-color: rgb(0, 33, 15, 255);  
     display: flex;
