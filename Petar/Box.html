@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martial Arts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylep.css">
+</head>
 <body>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Boxing</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="stylep.css">
-    </head>
-    
     <header>
-        <img src="Screenshot 2024-05-12 102639.png" alt="logo" class="logo">
-        <h1>Boxing</h1>
-    </header>
-    <a class="What is boxing?">
+        <img src="Screenshot 2024-05-12 102639.png" class="logo">
+        <ul class="nav">
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="index.html">Ivan</a></button>
+                <div class="dropdown-content">
+                    <a href="Muai_Thai.html">Muai-Thai</a>
+                    <a href="Karate.html">Karate</a>
+                </div>
+            </div>
+        </li>
+        <li>            
+            <div class="dropdown">
+                <button class="dropbtn"><a href="index.html">Petar</a></button>
+                <div class="dropdown-content">
+                    <a href="Box.html">Boxing</a>
+                    <a href="Kick_Box.html">Kick-Boxing</a>
+            </div>
+            </div>
+        </li>
+            <li>            
+                <div class="dropdown">
+                <button class="dropbtn"><a href="index.html">Valeri</a></button>
+                <div class="dropdown-content">
+                    <a href="mma.html">MMA</a>
+                    <a href="jiujitsu.html">Jiu-Jitsu</a>
+                </div>
+            </div>
+        </li>
+        </ul>
+    </header><br>
+<!--tuka shte bude infoto za martial arts na hoym peija mejdu hedyra i futyra-->
+<main>
+    <a class="General">
+        <h1>BOXING</h1>
         <h2>What is boxing?</h2>
         <p>
             Boxing is a combat sport and a martial art[ in which two people, usually wearing protective gloves
             and other protective equipment such as hand wraps and mouthguards,
             throw punches at each other for a predetermined amount of time in a boxing ring.
-            Although the term boxing is commonly attributed to western boxing, in which only fists are involved, it has
-            developed in different ways in different geographical areas and cultures of the World. In global terms,
-            "boxing" today is also a set of combat sports focused on striking, in which two opponents face each other
-            in a fight using at least their fists, and possibly involving other actions such as kicks, elbow strikes,
-            knee strikes, and headbutts, depending on the rules. Some of these variants are the bare-knuckle boxing,
-            kickboxing, Muay Thai, Lethwei, savate, and sanda.
             Boxing techniques have been incorporated into many martial arts, military systems, and other combat sports.
             A winner can be resolved before the completion of the rounds when a referee deems an opponent incapable of
             continuing,
@@ -97,14 +121,16 @@
     <a class="Champions">
         <h2>Famous Boxing Champions</h2>
      <ul>
-        <li>    <h2>John.L.Sullivan</h2>
+        <li class="John">    <h2>John.L.Sullivan</h2>
+            <img src="JOHN.png" height="250vh">
             John Lawrence Sullivan (October 15, 1858 February 2, 1918), known simply as John L. among his admirers,
              and dubbed the "Boston Strong Boy" by the press, was an American boxer. He is recognized as the first 
              heavyweight champion of gloved boxing, de facto reigning from February 7, 1882, to September 7, 1892. 
              He is also generally recognized as the last heavyweight champion of bare-knuckle boxing under the London Prize Ring Rules, 
              being a cultural icon of the late 19th century America, 
             arguably the first boxing superstar and one of the world's highest-paid athletes of his era.</li><br>
-        <li><h2>Tyson fury</h2>
+        <li class="Fury"><h2>Tyson fury</h2>
+            <img class="Pic" src="TysonFury.png" height="250vh" width="250vh">
             Tyson Fury ,the British Heavyweight,is one of the most skilled pugilist in the modern era. 
             Fury has notable wins over Deontay Wilder and Wladimir Klitschko. He is considered the best or second best heavyweight by most outlets.
             Tyson Fury is the current WBC heavyweight champion with a career record of (34-0-1, 24KO).
@@ -114,8 +140,10 @@
             so ranked sixth pound-for-pound by ESPN and the Boxing Writers Association of America, and seventh by the Transnational Boxing Rankings Board.
             <!--<img src="TysonFury.png">insert a picture of T.Fury-->
         </li><br>
-        <li><h2>Mike Tyson</h2>
-            Michael Gerard Tyson  is an American professional boxer who competed from 1985 to 2005, 
+        <li class="Mike"><h2>Mike Tyson</h2>
+            <img src="MikeTyson.png" height="250vh" width="350vh" >
+            <p> 
+                Michael Gerard Tyson  is an American professional boxer who competed from 1985 to 2005, 
             and is scheduled to compete once again in 2024.
             Total fights	58
             Wins	50
@@ -129,81 +157,62 @@
             Tyson was convicted of rape and sentenced to six years in prison, although he was released on parole after three years.
             After his release in 1995, he engaged in a series of comeback fights, regaining the WBA and WBC titles in 1996 to join Floyd Patterson, 
             Muhammad Ali, Tim Witherspoon,
-            Evander Holyfield and George Foreman as the only men in boxing history to have regained a heavyweight championship after losing it.
+            Evander Holyfield and George Foreman as the only men in boxing history to have regained a heavyweight championship after losing it.</p><br>
+
         </li><br>
         <!--<img src="MikeTyson.png">insert a picture of Mike Tyson-->
      </ul>
-     <div>
-        <ul >
-           <div class="Pictures">
-           <li>
-               John l Sullivan<br>
-               <img src="JohnLSullivan.png" height="250vh" width="250vh">
-           </li>
-           <li>
-               Tyson fury<br>
-               <img class="Pic" src="TysonFury.png" height="250vh" width="250vh">
-           </li>
-           <li>
-               <div class="dropdown"></div>
-               
-               <button class="dropbtn">Mike Tyson</button><br>
-               <div class="dropdown-content">
-               <img src="MikeTyson.png" height="250vh" width="350vh">   
-           </div>
-       </div>
-           </li>
        </div>
     </a>
-    <footer>
-        <div class="container">
-            <div class="wrapper">
-                <div class="footer_widget">
-                    <a href="#">
-                        <img src="Screenshot 2024-05-12 102639.png" alt="logo" class="logo">
-                    </a>
-                    <p class="description">
-                        Martial Arts is a website that provides information about martial arts, including the history, techniques, and benefits of martial arts.
-                    </p>
-                    <ul class="social_icons">
-                        <li>
-                            <a href="https://www.facebook.com/tues.bg/?locale=bg_BG" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://discord.com/channels/1182771961550614700/1182774586455097436" target="_blank">
-                                <i class="fab fa-discord"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/tues.bg/" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@TUES/featured" target="_blank">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer_widget">
-                    <h6>Quick links</h6>
-                    <ul class="links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Valeri</a></li>
-                        <li><a href="#">Ivan</a></li>
-                        <li><a href="#">Petar</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
+</main><br>
+<footer>
+    <div class="container">
+        <div class="wrapper">
+            <div class="footer_widget">
+                <a href="#">
+                    <img src="Screenshot 2024-05-12 102639.png" alt="logo" class="logo">
+                </a>
+                <p class="description">
+                    Martial Arts is a website that provides information about martial arts, including the history, techniques, and benefits of martial arts.
+                </p>
+                <ul class="social_icons">
+                    <li>
+                        <a href="https://www.facebook.com/tues.bg/?locale=bg_BG" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/channels/1182771961550614700/1182774586455097436" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/tues.bg/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@TUES/featured" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="copyryght_wrapper">
-             <p>Design and Developed by VIP&copy;2024 Martial Arts. All rights reserved.</p>       
+            <div class="footer_widget">
+                <h6>Quick links</h6>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Valeri</a></li>
+                    <li><a href="#">Ivan</a></li>
+                    <li><a href="#">Petar</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="copyryght_wrapper">
+         <p>Design and Developed by VIP&copy;2024 Martial Arts. All rights reserved.</p>       
+        </div>
+    </div>
+</footer>
 </body>
-
 </html>
