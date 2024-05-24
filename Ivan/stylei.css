@@ -15,7 +15,8 @@ header{
     background-color: rgb(0, 33, 16);
     position: sticky;
     top:0;
-
+    box-shadow:  0px 8px 10px rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 .logo_head{
     display:flex;
@@ -120,10 +121,41 @@ button:hover {
     background-color: rgb(69,152,73, 255);
 }
 
+main{
+    color: hsla(120, 59%, 10%, 0.967);
+}
 
+#h{
+    color: hsla(120, 59%, 10%, 0.967);
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
 
-/* ottuk nadolu e css na IVAN za fotera*/
+}
 
+.beginning{
+    display: flex;
+    font-size: larger;
+    margin: 3vh 3vh 0vh 3vh;
+}
+
+.beginning img{
+    margin-left: 3vh;
+    border-radius: 5%;
+    box-shadow: #000000 0px 0px 10px;
+}
+
+.beginning img:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.beginning p{
+    margin-right: 3vh;
+    margin-left: 3vh;
+    font-size: 1.2em;
+    text-align: justify;
+}
 
 * {
     margin: 0;
@@ -131,16 +163,14 @@ button:hover {
     box-sizing: border-box;
 }
 
-
-
 footer{
     position: relative;
     width: 100%;
     height: auto;
     padding-top: 80px;
     background-color: Rgba(0, 33, 15, 255); 
- /*   border-top-left-radius:2% ;
-    border-top-right-radius:2% ;*/  
+    box-shadow:     rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 
 .container{
@@ -241,4 +271,3 @@ footer{
     text-align: center;
     font-weight: 500;
     }
-/*valeri css for header*/
