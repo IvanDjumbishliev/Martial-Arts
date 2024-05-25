@@ -139,13 +139,13 @@ main{
     margin: 3vh 3vh 0vh 3vh;
 }
 
-.beginning img{
+main img{
     margin-left: 3vh;
     border-radius: 5%;
     box-shadow: #000000 0px 0px 10px;
 }
 
-.beginning img:hover{
+main img:hover{
     transform: scale(1.05);
     transition: 1s;
 }
@@ -155,6 +155,39 @@ main{
     margin-left: 3vh;
     font-size: 1.2em;
     text-align: justify;
+}
+
+.main_info{
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    margin: 3vh 3vh 0vh 3vh;
+}
+
+.info{
+    display: flex;
+}
+
+.theory{
+    display: flex;
+    flex-direction: column;
+    margin: 3vh;
+    font-size: 1.2em;
+    
+}
+
+#par{
+    margin: 3vh 3vh 0vh 3vh;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+#slogan{
+    color: hsla(195, 61%, 10%, 0.621);
+}
+
+.last_img{
+    margin-bottom: 3vh;
 }
 
 * {
