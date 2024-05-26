@@ -120,8 +120,11 @@
         background-color: rgb(69,152,73, 255);
     }
 .General{
-    padding: 10vh;
-    margin: 10vh;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
     h1{
         font-size: 7vh;
         align-items: center;
