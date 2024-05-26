@@ -71,6 +71,12 @@ document.getElementById("choise3.4").addEventListener("click", function() {
     console.log(userAns[2]);
 });
 
+for (let i=0;i<3;i++){
+    for (let j=1;j<5;j++){
+        
+    }
+}
+
 
 for (let i=0;i<3;i++){
     for (let j=1;j<5;j++){
