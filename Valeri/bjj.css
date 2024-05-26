@@ -1,0 +1,403 @@
+*{
+    color:whitesmoke;
+    z-index: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    background-color:   rgb(69,152,73); 
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    background-color: rgb(0, 33, 16);
+    position: sticky;
+    top:0;
+    box-shadow:  0px 8px 10px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+.logo_head{
+    display:flex;
+    height:120px;
+}
+
+.nav{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: top;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+li{
+    list-style: none;
+}
+button {
+    background-color: rgb(57, 131, 61);
+    color: white;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    border-radius: 0px;
+    background-color: rgb(69,153,73);
+    color: white;
+}
+
+.dropdown {
+    border-radius: 0px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    border-radius: 0px;
+    border-width: 2px;
+    border-color: white;
+    position: absolute;
+    background-color: rgb(69, 153, 73);
+    min-width: 130px;
+    margin: 0;
+    z-index: 1;
+    box-shadow:  0px 8px 10px rgba(0, 0, 0, 0.6);
+}
+
+.dropdown-content a {
+    display: block;    
+
+    border-width: 2px;
+    border-color: white;
+    border-radius: 0px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    border-width: 2px;
+    border-color: white;
+    border-radius: 0px;
+    transition: 0.3s;
+    background-color: rgb(69,169,73);
+
+}
+
+.dropdown:hover .dropdown-content {
+    border-width: 2px;
+    border-color: white;
+    border-radius: 0px;
+    transition: 0.3; 
+    display: block;
+    background-color: rgba(69, 169, 72, 0.992);
+}
+
+.dropdown:hover .dropbtn{
+    border-width: 2px;
+    border-color: white;
+    border-radius: 0px;
+    transition: 0.3s;
+    background-color: rgb(69,152,73, 255);
+}
+
+.a-sports:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.heading-div{
+    text-align: center;
+    display:inline-block;
+}
+
+h1{
+    display: inline-block;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    position: relative;
+    margin-top: 18px;
+}
+
+h1::before,
+h1::after{
+    content:'';
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+
+}
+
+h1::before{
+    background-color: rgb(69, 153, 73);
+    animation: typewriter 3s steps(19) 1.5s forwards;
+
+}
+
+h1::after{
+    width:0.125em;
+    background-color: black;
+    animation: typewriter 3s steps(19) 1.5s forwards,blink 750ms steps(19) infinite;
+}
+
+img:not(.logo_head, .logo),p,hr,h2{
+    opacity: 0;
+    transform: translateY(3em);
+    animation: fadeInUp 2s ease 5s forwards;
+}
+
+.mma-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 30px; 
+}
+
+.history, .fighting-styles, .mma-ufc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+
+}
+
+
+
+.history img{
+    width: 300px;
+    height: 260px;
+    border-radius: 5%;
+    margin: 0 30px;
+
+}
+
+.line{
+    width: 99%;
+    background-color: white;
+    margin: 10px 30px;
+
+}
+
+#line-under-h1{
+    width:35%
+}
+
+.mma-info p{
+    font-size: 1.2em;
+}
+
+
+.fighting-styles img{
+    width: 320px;
+    height: 300px;
+    border-radius: 5%;
+    margin: 0 30px;
+}
+
+.mma-ufc img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin: 0 30px;
+}
+
+h2{
+    font-size: 2em;
+    margin: 35px 30px 10px 30px;
+    text-align: center;
+}
+
+.starsline{
+    width: 50%;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+/*tuka trqbva da e infoto za mma nad tiq dvete neshta otdolu*/
+
+
+
+
+
+
+
+
+
+
+
+@keyframes typewriter {
+    to {left:100%;}
+}
+
+@keyframes blink{
+    to{
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/* ottuk nadolu e css na IVAN za fotera*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    background-color: Rgba(0, 33, 15, 255); 
+ /*   border-top-left-radius:2% ;
+    border-top-right-radius:2% ;*/  
+}
+
+.container{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 5vh;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ 
+.wrapper .footer_widget{
+    width: calc(20% - 3vh);
+    margin: 0 1.5vh 5vh;
+    padding: 0 1.5vh;
+}
+
+.wrapper .footer_widget:nth-child(1){
+    width: calc(40% - 5vh);
+    margin-right: 1.5vh;
+}
+
+.wrapper .footer_widget .logo{
+    margin-bottom: 2vh;
+    vertical-align: middle;
+    width: 25vh;
+}
+
+.wrapper .footer_widget p{
+    margin-bottom: 2vh;
+    font-size: 2vh;
+    color: hsla(139, 11%, 65%, 0.427);
+    line-height: 2.2vh;
+}
+
+.wrapper .footer_widget .social_icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.wrapper .footer_widget .social_icons li{
+    list-style: none;
+}
+
+.wrapper .footer_widget .social_icons li a{
+    width: 4vh;
+    height: 4vh;
+    margin-right: 1vh;
+    color: #fff;
+    background-color: hsla(139, 11%, 65%, 0.427);
+    border-radius: 50%;
+    font-size: 2.5vh;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .footer_widget .social_icons li a:hover{
+    background-color: #fff;
+    color: Rgb(69 152 73);
+}
+
+.wrapper .footer_widget h6{
+    color: hsla(139, 11%, 65%, 0.427);
+    font-size: 3vh;
+    margin: 1vh 0 3vh;
+    font-weight: 600;
+}
+
+.wrapper .footer_widget .links li{
+    list-style: none;
+}
+
+.wrapper .footer_widget .links li a{
+    color: hsla(139, 11%, 65%, 0.427);
+    font-size: 2.5vh;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .footer_widget .links li a:hover{
+    color: hsla(0, 0%, 100%, 0.426);
+}
+
+.copyryght_wrapper{
+    padding: 2vh;
+    border-top: 0.3vh solid hsla(139, 11%, 65%, 0.427);
+    color: hsla(138, 11%, 65%, 0.5);
+    font-size: 2vh;
+    text-align: center;
+    font-weight: 500;
+    }
