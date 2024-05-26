@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martial Arts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Quiz.css">
+   <script src="functionp.js"></script>
+</head>
+<body>
+    <header>
+        <a href="\Home\index.html"><img src="\Home\projectITlogo.png" class="logo_head"></a>
+        <ul class="nav">
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="index.html">Ivan</a></button>
+                <div class="dropdown-content">
+                <a href="\Ivan\Muai_Thai.html" class="a-sports">Muai-Thai</a>
+                    <a href="\Ivan\Karate.html" class="a-sports">Karate</a>
+                </div>
+            </div>
+        </li>
+        <li>            
+            <div class="dropdown">
+                <button class="dropbtn"><a href="index.html">Petar</a></button>
+                <div class="dropdown-content">
+                    <a href="\Petar\Box.html" class="a-sports">Boxing</a>
+                    <a href="\Petar\Kick_Box.html" class="a-sports">Kick-Boxing</a>
+                    <a href="\Petar\Quiz.html">Quiz!!!</a>
+            </div>
+            </div>
+        </li>
+            <li>            
+                <div class="dropdown">
+                <button class="dropbtn"><a href="index.html">Valeri</a></button>
+                <div class="dropdown-content">
+                    <a href="\Valeri\mma.html" class="a-sports">MMA</a>
+                    <a href="\Valeri\jiujitsu.html" class="a-sports">Jiu-Jitsu</a>
+                </div>
+            </div>
+        </li>
+        </ul>
+    </header>
+    <main>
+<h1>QUIZ</h1>
+<h2>(<b>Kick-Boxing and Boxing</b>)</h2>
+<h3>Which year was John L Sullivan born?</h3>
+<ul>
+    <li>
+        1858<br><button onclick="Change_Correct()">Choose this answer</button>
+        <p id="Correct"></p> 
+    </li>
+    <li> 
+        1919<br><button onclick="Change_wrong()">Choose this answer</button>
+        <p id="Wrong"></p> 
+    </li>
+    <li>
+        1990<br><button onclick="Change_wrong1()">Choose this answer</button>
+        <p id="Wrong1"></p> 
+    </li>
+</ul>
+<h3>What is the<b> most</b> recent nickname of Mike Tyson?</h3>
+<ul>
+    <li>
+        Kid Dynamite<br><button onclick="Change_wrong2()">Choose this answer</button>
+        <p id="Wrong2"></p> 
+    </li>
+    <li>    
+        Iron Mike<br><button onclick="Change_wrong3()">Choose this answer</button>
+        <p id="Wrong3"></p> 
+    </li>
+    <li>
+        The baddest person on the planet<br><button onclick="Change_Correct1()">Choose this answer</button>
+        <p id="Correct1"></p> 
+    </li>
+</ul>
+<h3>How many Categories are in boxing?</h3>
+<ul>
+    <li>
+        5<br><button onclick="Change_wrong4()">Choose this answer</button>
+        <p id="Wrong4"></p> 
+    </li>
+    <li>
+        9<br><button onclick="Change_Correct2()">Choose this answer</button>
+        <p id="Correct2"></p> 
+    </li>
+    <li>
+        7<br><button onclick="Change_wrong5()">Choose this answer</button>
+        <p id="Wrong5"></p> 
+    </li>
+</ul>
+<h3>How many bouts are there in professional boxing?</h3>
+<ul>
+    <li>
+        12<br><button onclick="Change_Correct3()">Choose this answer</button>
+        <p id="Correct3"></p> 
+    </li>
+    <li>
+        15<br><button onclick="Change_wrong6()">Choose this answer</button>
+        <p id="Wrong6"></p> 
+    </li>
+    <li>
+        10<br><button onclick="Change_wrong7()">Choose this answer</button>
+        <p id="Wrong7"></p> 
+    </li>
+</ul>
+<h3>In which of the following variations of karate are elbows allowed?</h3>
+<ul>
+    <li>
+        American style10<br><button onclick="Change_wrong8()">Choose this answer</button>
+        <p id="Wrong8"></p> 
+    </li>
+    <li>
+        Korean style<br><button onclick="Change_Correct4()">Choose this answer</button>
+        <p id="Correct4"></p> 
+    </li>
+    <li>
+        Japanese style <br><button onclick="Change_wrong9()">Choose this answer</button>
+        <p id="Wrong9"></p> 
+    </li>
+</ul>
+<h3>How many rounds are usually in point fighting style karate?</h3>
+<ul>
+    <li>
+        12 <br><button onclick="Change_wrong10()">Choose this answer</button>
+        <p id="Wrong10"></p> 
+    </li>
+    <li>
+        9<br><button onclick="Change_wrong11()">Choose this answer</button>
+        <p id="Wrong11"></p> 
+    </li>
+    <li>
+        3<br><button onclick="Change_Correct5()">Choose this answer</button>
+        <p id="Correct5"></p> 
+    </li>
+</ul>
+    </main>
+<footer>
+    <div class="container">
+        <div class="wrapper">
+            <div class="footer_widget">
+                <a href="#">
+                    <img src="/Home/projectITlogo.png" alt="logo" class="logo">
+                </a>
+                <p class="description">
+                    Martial Arts is a website that provides information about martial arts, including the history, techniques, and benefits of martial arts.
+                </p>
+                <ul class="social_icons">
+                    <li>
+                        <a href="https://www.facebook.com/tues.bg/?locale=bg_BG" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/channels/1182771961550614700/1182774586455097436" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/tues.bg/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@TUES/featured" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_widget">
+                <h6>Quick links</h6>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Valeri</a></li>
+                    <li><a href="#">Ivan</a></li>
+                    <li><a href="#">Petar</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyryght_wrapper">
+         <p>Design and Developed by VIP&copy;2024 Martial Arts. All rights reserved.</p>       
+        </div>
+    </div>
+</footer>
+</body>
+</html>
