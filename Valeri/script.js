@@ -72,7 +72,18 @@ document.getElementById("choise3.4").addEventListener("click", function() {
 });
 
 
-
+for (let i=0;i<3;i++){
+    for (let j=1;j<5;j++){
+        document.getElementById("choise"+(i+1)+"."+j).addEventListener("click", function() {
+            document.getElementById("choise"+(i+1)+"."+j).style.backgroundColor = "green";
+            for (let k=1;k<5;k++){
+                if (k!=j){
+                    document.getElementById("choise"+(i+1)+"."+k).style.backgroundColor = "grey";
+                }
+            }
+        });
+    }
+}
 
 
 document.getElementById("submit").addEventListener("click", function() {
@@ -104,49 +115,3 @@ document.getElementById("submit").addEventListener("click", function() {
     document.getElementById("result2").innerHTML = result2;
     document.getElementById("result3").innerHTML = result3;
 });
-
-
-/*
-for (let i = 1; i <= 2; i++) {
-    for (let j = 0; j < 4; j++) {
-        document.getElementById("choise" + i + "." + j).addEventListener("click", function() {
-            userAns[i-1] = j;
-            console.log(userAns[i-1]);
-        });
-    }
-}
-
-
-document.getElementById("submit").addEventListener("click", function() {
-    for (let i = 0; i < 3; i++) {
-        if (userAns[i] == correctAns[i]) {
-            document.getElementById("result" + i).innerHTML = "Correct";
-        } else {
-            document.getElementById("result" + i).innerHTML = "Incorrect";
-        }
-    }
-
-
-});
-*/
-/*
-document.getElementById("choise1.1").addEventListener("click", function() {
-  userAns1 = 2;
-  console.log(userAns1);
-});
-
-document.getElementById("choise1.2").addEventListener("click", function() {
-    userAns1 = 2;
-    console.log(userAns1);
-});
-
-document.getElementById("choise1.3").addEventListener("click", function() {
-    userAns1 = 3;
-    console.log(userAns1);
-  });
-
-document.getElementById("choise1.4").addEventListener("click", function() {
-    userAns1 = 4;
-    console.log(userAns1);
-});
-*/
