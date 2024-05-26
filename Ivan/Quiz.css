@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Heebo', sans-serif;
     display: flex;
     background-color: Rgb(69 152 73); 
     flex-direction: column;
-    overflow: hidden;
+    justify-content: space-between;
 }
 
 header{
@@ -57,6 +57,7 @@ button {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    transition: 0.5s;
 
 }
 
@@ -121,12 +122,67 @@ button:hover {
     background-color: rgb(69,152,73, 255);
 }
 
-.quiz_container{
+.body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.quiz_container {
+    background-color: wheat;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgb(51, 51, 51);
+    width: 600px;
+    overflow: hidden;
+}
+
+.quiz_header {
+    padding: 4rem;
+}
+
+h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0;   
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+#submit{
+    background-color: rgba(0, 170, 255, 0.581);
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1.3rem;
+    
+}
+
+#submit:hover{
+    background-color: rgba(0, 170, 255, 0.897);
+}
+
+#submit:focus{
+    outline: none;
+    background-color: rgba(30, 206, 106, 0.719);
 }
 
 * {
@@ -141,7 +197,7 @@ footer{
     height: auto;
     padding-top: 80px;
     background-color: Rgba(0, 33, 15, 255); 
-    box-shadow:     rgba(0, 0, 0, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.4);
     z-index: 2;
 }
 
