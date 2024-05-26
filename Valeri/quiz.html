@@ -7,7 +7,7 @@
     <link rel="icon" href="\Home\projectITlogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mma.css">
+    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
                 <button class="dropbtn">Ivan</button>
                 <div class="dropdown-content">
                 <a href="\Ivan\Muai_Thai.html" class="a-sports">Muai-Thai</a>
-                    <a href="\Ivan\Karate.html" class="a-sports">Karate</a>
+                <a href="\Ivan\Karate.html" class="a-sports">Karate</a>
                 </div>
             </div>
         </li>
@@ -44,9 +44,51 @@
         </ul>
     </header>
     <h1>It's quiz time</h1>
+    <hr class="line">
 
+    <div class="test">
+        <div class="question">
+            <h2>Question 1</h2><br>
+            <p>MMA is abbreviation of which? </p><br>
+            <div class="form">
+                <button class="choises1" id="choise1.1">Mad Monkey Muffins</button><br>
+                <button class="choises1" id="choise1.2">Mixed Martial Arts </button><br>
+                <button class="choises1" id="choise1.3">Monkeys Advocating Madness</button><br>
+                <button class="choises1" id="choise1.4">Married Monkeys Association</button><br>
+            </div>
+        </div>
+        <hr>
+        <div class="question">
+            <h2>Question 2</h2><br>
+            <p>In MMA the fighting place is called "Octagon", how much sides does it has?</p><br>
+            <div class="form">
+                <button class="choises" id="choise2.1">4 sides</button><br>
+                <button class="choises" id="choise2.2">10 sides</button><br>
+                <button class="choises" id="choise2.3">6 sides</button><br>
+                <button class="choises" id="choise2.4">8 sides</button><br>
+            </div>
+        </div>
+        <hr>
+        <div class="question">
+            <h2>Question 3</h2><br>
+            <p>Which is the art of the eight limbs?</p><br>
+            <div class="form">
+                <button class="choises" id="choise3.1">Karate</button><br>
+                <button class="choises" id="choise3.2">Taekwondo</button><br>
+                <button class="choises" id="choise3.3">Muay Thai</button><br>
+                <button class="choises" id="choise3.4">Box</button><br>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+    <p id="results" class="result">Results:</p><br>
+    <p id="result1" class="result"></p>
+    <p id="result2" class="result"></p>
+    <p id="result3" class="result"></p>
+    <button id="submit">Submit</button>
+    </div>
     <!--tuka nadolu e na Ivan html for footer -->
-<footer>
+    <footer>
     <div class="container">
         <div class="wrapper">
             <div class="footer_widget">
@@ -98,6 +140,7 @@
         </div>
     </div>
 </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
