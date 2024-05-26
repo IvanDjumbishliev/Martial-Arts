@@ -1,6 +1,5 @@
 *{
     color:whitesmoke;
-    z-index: 1;
 }
 
 body {
@@ -9,7 +8,7 @@ body {
     min-height: 100vh;
     font-family: 'Heebo', sans-serif;
     display: flex;
-    background-color:   rgb(69,152,73); 
+    background-color: Rgb(69, 152 ,73);  
     justify-content: space-between;
     flex-direction: column;
 }
@@ -21,7 +20,6 @@ header{
     position: sticky;
     top:0;
     box-shadow:  0px 8px 10px rgba(0, 0, 0, 0.4);
-    z-index: 2;
 }
 .logo_head{
     display:flex;
@@ -132,124 +130,6 @@ button:hover {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.heading-div{
-    text-align: center;
-    display:inline-block;
-}
-
-h1{
-    display: inline-block;
-    font-family: "Source Code Pro", monospace;
-    position: relative;
-    position: relative;
-    margin-top: 18px;
-}
-
-h1::before,
-h1::after{
-    content:'';
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right: 0;
-
-}
-
-h1::before{
-    background-color: rgb(69, 153, 73);
-    animation: typewriter 3s steps(18) 1.5s forwards;
-
-}
-
-h1::after{
-    width:0.125em;
-    background-color: black;
-    animation: typewriter 3s steps(18) 1.5s forwards,blink 750ms steps(18) infinite;
-}
-
-img:not(.logo_head, .logo),p,hr,h2{
-    opacity: 0;
-    transform: translateY(3em);
-    animation: fadeInUp 2s ease 5s forwards;
-}
-
-.mma-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 30px; 
-}
-
-.history, .fighting-styles, .mma-ufc{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 30px;
-
-}
-
-
-
-.history img{
-    width: 300px;
-    height: 260px;
-    border-radius: 5%;
-    margin: 0 30px;
-
-}
-
-.line{
-    width: 99%;
-    background-color: white;
-    margin: 10px 30px;
-
-}
-
-#line-under-h1{
-    width:35%
-}
-
-.mma-info p{
-    font-size: 1.2em;
-}
-
-
-.fighting-styles img{
-    width: 320px;
-    height: 300px;
-    border-radius: 5%;
-    margin: 0 30px;
-}
-
-.mma-ufc img{
-    width: 300px;
-    height: 300px;
-    border-radius: 5%;
-    margin: 0 30px;
-}
-
-h2{
-    font-size: 2em;
-    margin: 35px 30px 10px 30px;
-    text-align: center;
-}
-
-.starsline{
-    width: 50%;
-    align-self: center;
-}
-
-
-
-
-
-
-
-
-/*tuka trqbva da e infoto za mma nad tiq dvete neshta otdolu*/
 
 
 
@@ -261,26 +141,10 @@ h2{
 
 
 
-@keyframes typewriter {
-    to {left:100%;}
-}
-
-@keyframes blink{
-    to{
-        background: transparent;
-    }
-}
-
-@keyframes fadeInUp{
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 
 
-
+/*css na Ivan za footera*/
 
 /* ottuk nadolu e css na IVAN za fotera*/
 
@@ -401,3 +265,4 @@ footer{
     text-align: center;
     font-weight: 500;
     }
+/*valeri css for header*/

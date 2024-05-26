@@ -158,14 +158,14 @@ h1::after{
 
 h1::before{
     background-color: rgb(69, 153, 73);
-    animation: typewriter 3s steps(18) 1.5s forwards;
+    animation: typewriter 3s steps(19) 1.5s forwards;
 
 }
 
 h1::after{
     width:0.125em;
     background-color: black;
-    animation: typewriter 3s steps(18) 1.5s forwards,blink 750ms steps(18) infinite;
+    animation: typewriter 3s steps(19) 1.5s forwards,blink 750ms steps(19) infinite;
 }
 
 img:not(.logo_head, .logo),p,hr,h2{
