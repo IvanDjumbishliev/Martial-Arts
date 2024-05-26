@@ -8,10 +8,10 @@
         <title>Boxing</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="stylep.css">
+        <script src="\Petar\function.js"></script>
     </head>
-    
     <header>
-        <img src="Screenshot 2024-05-12 102639.png" class="logo">
+        <a href="\Home\index.html"><img src="Screenshot 2024-05-12 102639.png" class="logo"></a>
         <ul class="nav">
         <li>
             <div class="dropdown">
@@ -37,7 +37,7 @@
                 <button class="dropbtn"><a href="index.html">Valeri</a></button>
                 <div class="dropdown-content">
                     <a href="\Valeri\mma.html">MMA</a>
-                    <a href="\Valeri\jiujitsu.html">Jiu-Jitsu</a>
+                    <a href="\Valeri\bjj.html">Jiu-Jitsu</a>
                 </div>
             </div>
         </li>
@@ -78,34 +78,13 @@
             In 1891, the National Sporting Club (N.S.C.), a private club in London,
             began to promote professional glove fights at its own premises, and created nine of its own rules to augment
             the Queensberry Rules.
-            There are 9 weight devisions:<br>
+            There are 17 weight devisions:<br>
             <!--Make a js function that would display how many people are in each division-->
-            <ul class="Categories">
-                <li>
-                    Heavy Weight which is over 90kgs.
-                </li>
-                <li>
-                    Light Heavy Weight which is from 76-79kgs.
-                </li>
-                <li>
-                    MiddleWeight which is from 70-73kgs.
-                </li>
-                <li>
-                    WelterWeight which is from 63-67kgs.
-                </li>
-                <li>
-                    LightWeight which is from 69-61kgs.
-                </li>
-                <li>
-                    FeatherWeight which is from 55-57kgs.
-                </li>
-                <li>
-                    BantamWeight which is from 52-53kgs.
-                </li>
-                <li>
-                    Feathereight which is from 49-51kgs.
-                </li>
-            </ul>
+    <h1>Boxing Weight Category Finder</h1>
+    <label for="weight">Enter your weight here(<b>kgs</b>)</label>
+    <input type="number" id="weight" name="weight">
+    <button onclick="findCategory()">Confirm</button>
+    <p id="category"></p>   
         </p>
         <br>
         <p>The modern sport arose from illegal venues and outlawed prizefighting and has become a multibillion-dollar
