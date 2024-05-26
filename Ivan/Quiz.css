@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    height: 100vh;
     font-family: 'Heebo', sans-serif;
     display: flex;
-    background-color: Rgb(69 152 73);  
-    justify-content: space-between;
+    background-color: Rgb(69 152 73); 
     flex-direction: column;
+    overflow: hidden;
 }
 
 header{
@@ -121,96 +121,12 @@ button:hover {
     background-color: rgb(69,152,73, 255);
 }
 
-
-main{
-    color: hsla(120, 59%, 10%, 0.967);
-}
-
-#h{
-    color: hsla(120, 59%, 10%, 0.967);
-    font-size: 3em;
-    font-weight: 700;
-    text-align: center;
-}
-
-.beginning{
-    display: flex;
-    font-size: larger;
-    margin: 3vh 3vh 0vh 3vh;
-}
-
-main img{
-    margin-left: 3vh;
-    border-radius: 5%;
-    box-shadow: #000000 0px 0px 10px;
-}
-
-main img:hover{
-    transform: scale(1.05);
-    transition: 1s;
-}
-
-.beginning p{
-    margin-right: 3vh;
-    margin-left: 3vh;
-    font-size: 1.2em;
-    text-align: justify;
-}
-
-#par_beg{
-    margin: 3vh 3vh 0vh 3vh;
-    font-size: 1.2em;
-    text-align: justify;
-}
-
-.main_info{
-    display: flex;
-    font-size: larger;
-    flex-direction: column;
-    margin: 3vh 3vh 0vh 3vh;
-}
-
-.info{
-    display: flex;
-}
-
-.theory{
+.quiz_container{
     display: flex;
     flex-direction: column;
-    margin: 3vh;
-    font-size: 1.2em;
-    
-}
-
-#par{
-    margin: 3vh 3vh 0vh 3vh;
-    font-size: 1.2em;
-    text-align: justify;
-}
-
-#slogan{
-    color: hsla(195, 61%, 10%, 0.621);
-}
-
-.last_img{
-    margin-bottom: 3vh;
-}
-
-.MT_button{
-    display: flex;
     justify-content: center;
-    margin: 3vh;
-    font-size: larger;
-    transition: 0.5s;
-    color: hsla(195, 61%, 10%, 0.922);
-    
-}
-
-.ATTACKING{
-    display: flex;
-    flex-direction: column;
-    margin: 3vh;
-    font-size: 1.2em;
+    align-items: center;
+    margin: 0;
 }
 
 * {
