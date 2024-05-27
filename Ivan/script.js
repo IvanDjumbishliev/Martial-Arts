@@ -72,7 +72,7 @@ const quizData = [
         correct: 'a'
     },
     {
-        questin: 'In how many countries is spread Kyokushin Karate?',
+        question: 'In how many countries is spread Kyokushin Karate?',
         a: '100',
         b: '120',
         c: '150',
