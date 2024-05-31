@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
     font-family: 'Heebo', sans-serif;
     display: flex;
-    background-color: Rgb(69 152 73);  
+    background-color: rgb(69 152 73);  
     justify-content: space-between;
     flex-direction: column;
 }
@@ -123,7 +123,7 @@ button:hover {
 
 
 main{
-    color: hsla(120, 59%, 10%, 0.967);
+    color: hsla(120, 59%, 10%, 0.967); 
 }
 
 #h{
